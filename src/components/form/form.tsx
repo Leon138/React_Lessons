@@ -36,6 +36,7 @@ export const Form = () => {
           <button>CREATE ACCOUNT</button>
         </div>
       </form>
+      <p>Hello</p>
     </div>
   )
 }
