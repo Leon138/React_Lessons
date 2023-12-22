@@ -1,0 +1,143 @@
+.container {
+  width: 63vw;
+  height: 40em;
+  display: flex;
+  background-color:rgb(255,255,255);
+  border-radius: 15px;
+  box-shadow: -1px 4px 8px 8px rgba(34, 60, 80, 0.22);
+}
+
+.loginForm {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4vh;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 44%;
+}
+
+.loginFormTitle > h2 {
+  margin: 0;
+  font-size: 2vw;
+}
+
+.loginFormTitle > p {
+  font-size: 1.1vw;
+  margin: 2%;
+}
+
+.loginFormForm {
+  width: 95%;
+}
+
+.loginFormFooter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.loginFormFooter > div > a {
+  color: rgb(222,84,198);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.loginFormFooter > div > a:first-child {
+  margin-right: 20px;
+}
+
+.img {
+  width: 53%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0px 15px 15px 0px;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    overflow: hidden;
+    flex-direction: column-reverse;
+  }
+
+  .loginForm {
+    align-items: center;
+    width: auto;
+    padding-right: 40px;
+    margin-top: 3px;
+  }
+
+  .loginFormFooter {
+    margin-bottom: 2%;
+  }
+
+  .loginFormTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loginFormTitle > h2 {
+    margin: 0;
+    font-size: 2vw;
+  }
+  
+  .loginFormTitle > p {
+    margin: 0.3vw;
+    font-size: 1.7vw;
+  }
+
+  .img {
+    display: flex;
+    overflow: auto;
+    width: auto;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  br {
+    display: none;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .container {
+    width: 80vw;
+  }
+
+  .loginForm {
+    height: 63%;
+  }
+
+
+
+  .loginFormTitle > h2 {
+    font-size: 3vw;
+  }
+  
+  .loginFormTitle > p {
+    margin: 0.3vw;
+    font-size: 2.5vw;
+  }
+
+  .img {
+    height: 37%;
+  }
+
+  .formCheck {
+    font-size: 2.1vw;
+  }
+}
+
