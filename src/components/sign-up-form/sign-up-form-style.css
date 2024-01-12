@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url('../../shared/img/bgImage.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg {
+  100% {
+    filter: hue-rotate(360deg); 
+  }
+}
+
+.containerForm {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 405px;
+  height: 600px;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, .5);
+  backdrop-filter: blur(15px);
+}
+
+h2 {
+  font-size: 2em;
+  color: greenyellow;
+  text-align: center;
+  margin: 0;
+}
+
+.signInLink {
+  color: white;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.signInLink p a {
+  text-decoration: none;
+  color:royalblue;
+  font-weight: 600;
+}
+
+.signInLink p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+  .containerForm {
+    width: 100%;
+    height: 100vh;
+    border: none;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus { 
+  caret-color: white;
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.3em;
+  z-index: 1;
+}
+
+.custom {
+  background: #b621fe;
+}
+.custom:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #663dff;
+  border-radius: 15px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                   7px 7px 20px 0px rgba(0,0,0,.1),
+                   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.5s ease;
+}
+.custom:hover {
+  color: #fff;
+}
+.custom:hover:after {
+  left: 0;
+  width: 100%;
+}
+.custom:active {
+  top: 2px;
+}
