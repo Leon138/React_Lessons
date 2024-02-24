@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect, useState } from 'react';
-import './form-style.css';
+import '../form/form-style.css';
 
 const regexp = {
   email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9]+$/,
@@ -60,7 +60,6 @@ export const Form = () => {
       email: email,
       password: password,
     };
-    console.log(data);
   };
 
   return (

@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import './login-form-style.css';
+import '../login-form/login-form-style.css';
 import forestImg from '../../shared/img/forest.jpg';
-import { Form } from '../form/form';
+import { Form } from './form/form';
 
 export const LoginForm = () => {
   return (
-    <div className='container'>
+    <div className='containerLogin'>
       <div className='loginForm'>
         <div className='loginFormTitle'>
           <h2>
