@@ -1,7 +1,14 @@
-.container {
+.containerL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.containerLogin {
+  display: flex;
   width: 63vw;
   height: 40em;
-  display: flex;
   background-color:rgb(255,255,255);
   border-radius: 15px;
   box-shadow: -1px 4px 8px 8px rgba(34, 60, 80, 0.22);
@@ -120,8 +127,6 @@ img {
   .loginForm {
     height: 63%;
   }
-
-
 
   .loginFormTitle > h2 {
     font-size: 3vw;
