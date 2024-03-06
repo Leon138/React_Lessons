@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import { ThemeContext } from '../context/changeThemeContext';
+import { ThemeContext } from '../../context/changeThemeContext';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -56,7 +56,7 @@ export const CustomizedSwitches = () => {
   const { toggleTheme } = useContext(ThemeContext);
 
   return (
-    <FormGroup onClick={toggleTheme}>
+    <FormGroup onClick={toggleTheme} style={{ width: '5%' }}>
       <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} />} label='' />
     </FormGroup>
   );

@@ -17,7 +17,7 @@ export const ThemeProvider: React.FC<Props> = ({ children }) => {
   // const backgroundColor = theme === 'light' ? '#313131' : '#6e2bb1';
   // document.body.style.backgroundColor = backgroundColor;
 
-  document.getElementById('root').style.backgroundColor = theme === 'light' ? '#66789d' : '#6e2bb1';
+  document.getElementById('root').style.backgroundColor = theme === 'light' ? '#fff' : '#6e2bb1';
 
   const toggleTheme = () => {
     if (theme === 'light') {
